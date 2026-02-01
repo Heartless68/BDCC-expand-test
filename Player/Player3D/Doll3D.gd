@@ -89,6 +89,7 @@ func _ready():
 
 func testBody():
 	addPartObject("body", load("res://Player/Player3D/Parts/Body/HumanBody/HumanBody.tscn").instance())
+	addPartObject("body", load("res://Player/Player3D/Parts/Body/AnthroBody/AnthroBody.tscn").instance())
 	#addPartObject("legs", load("res://Player/Player3D/Parts/Legs/HumanLegs/HumanLegs.tscn").instance())
 	addPartObject("legs", load("res://Player/Player3D/Parts/Legs/DigiLegs/DigiLegs.tscn").instance())
 	#addPartObject("head", load("res://Player/Player3D/Parts/Head/HumanHead/HumanHead.tscn").instance())

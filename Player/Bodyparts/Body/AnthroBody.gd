@@ -1,14 +1,14 @@
 extends BodypartBody
 
 func _init():
-	visibleName = "anthro body"
+	visibleName = "Anthro body"
 	id = "anthrobody"
 
 func getCompatibleSpecies():
 	return [Species.Any]
 
 func getDoll3DScene():
-	return "res://Player/Player3D/Parts/Body/HumanBody/HumanBody.tscn"
+	return "res://Player/Player3D/Parts/Body/AnthroBody/AnthroBody.tscn"
 
 func getVulgarName() -> String:
 	return "normal body"

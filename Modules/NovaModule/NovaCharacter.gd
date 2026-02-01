@@ -122,7 +122,7 @@ func createBodyparts():
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("caninehead"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("vagina"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anus"))
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthroarms"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("canineears"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("shorthair"))

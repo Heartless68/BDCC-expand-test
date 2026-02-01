@@ -37,7 +37,7 @@ func getFemininity() -> int:
 	return 0
 
 func createBodyparts():
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthroarms"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anus"))
 	var breasts = GlobalRegistry.createBodypart("malebreasts")

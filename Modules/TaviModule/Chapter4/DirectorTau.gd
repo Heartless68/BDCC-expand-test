@@ -37,7 +37,7 @@ func getChatColor():
 func createBodyparts():
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanoldhead"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("combedbackhair"))
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthroarms"))
 	var breasts = GlobalRegistry.createBodypart("malebreasts")
 	breasts.size = -1
