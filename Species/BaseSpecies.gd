@@ -38,7 +38,7 @@ func getDefaultTail(_gender):
 	return null
 
 func getDefaultBody(_gender):
-	return "anthrobody"
+	return "humanbody"
 
 func getDefaultHead(_gender):
 	return "humanhead"

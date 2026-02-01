@@ -121,7 +121,7 @@ func createBodyparts():
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("dragonears2"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("tavihair"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("dragonhorns2"))
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthroarms"))
 	var breasts = GlobalRegistry.createBodypart("humanbreasts")
 	breasts.size = 3

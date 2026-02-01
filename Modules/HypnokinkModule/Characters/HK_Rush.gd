@@ -129,7 +129,7 @@ func createBodyparts():
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("mohawkhair"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("horseears"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("dragonhorns2"))
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("buffarms"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("hoofs"))
 	var penis = GlobalRegistry.createBodypart("equinepenis")

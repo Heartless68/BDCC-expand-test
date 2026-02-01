@@ -48,7 +48,7 @@ func getFemininity() -> int:
 	return 50
 
 func createBodyparts():
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anus"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("digilegs"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("buffarms"))

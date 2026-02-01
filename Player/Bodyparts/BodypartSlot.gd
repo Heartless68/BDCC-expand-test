@@ -122,7 +122,7 @@ static func findReplacement(slot, oldvalue, species=null, gender=Gender.Androgyn
 			return "plantilegs"
 	elif(slot == Body):
 		if(oldvalue in ["fluffbody"]):
-			return "anthrobody"
+			return "humanbody"
 	# Get default bodypart from species
 	var mainSpecies = null
 	if(species != null):
@@ -137,7 +137,7 @@ static func findReplacement(slot, oldvalue, species=null, gender=Gender.Androgyn
 		return replacementIdFor
 	# Hardcoded fallback convertions
 	if(slot == Body):
-		return "anthrobody"
+		return "humanbody"
 	elif(slot == Arms):
 		return "anthroarms"
 	elif(slot == Anus):

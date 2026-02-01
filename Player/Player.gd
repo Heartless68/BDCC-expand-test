@@ -63,7 +63,7 @@ func _ready():
 	giveBodypart(GlobalRegistry.createBodypart("baldhair"))
 	giveBodypart(GlobalRegistry.createBodypart("felinetail"))
 	giveBodypart(GlobalRegistry.createBodypart("felinehead"))
-	giveBodypart(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypart(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypart(GlobalRegistry.createBodypart("anthroarms"))
 	giveBodypart(GlobalRegistry.createBodypart("felineears"))
 	giveBodypart(GlobalRegistry.createBodypart("vagina"))

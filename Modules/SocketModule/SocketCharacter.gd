@@ -74,7 +74,7 @@ func createBodyparts():
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("fennechead"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("sockethair"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("fennecears"))
-	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthrobody"))
+	giveBodypartUnlessSame(GlobalRegistry.createBodypart("humanbody"))
 	giveBodypartUnlessSame(GlobalRegistry.createBodypart("anthroarms"))
 	var breasts = GlobalRegistry.createBodypart("humanbreasts")
 	breasts.size = 3
