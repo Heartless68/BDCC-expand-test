@@ -315,7 +315,7 @@ func createNewState():
 		turnActions = [],
 		animation = {
 			selectedStage = StageScene.SexAllFours,
-			selecedAnim = "tease",
+			selectedAnim = "tease",
 			selectedPC = "domID",
 			selectedNPC = "subID",
 		},
@@ -737,9 +737,9 @@ func _on_GenerateCodeButton_pressed():
 			for animWithCondition in state["animsWithCondition"]:
 				var conanim = animWithCondition["animData"]
 				result.append("\t\tif("+animWithCondition["condition"]+"):")
-				result.append("\t\t\treturn [StageScene."+conanim["selectedStage"]+", \""+conanim["selecedAnim"]+"\", {pc="+conanim["selectedPC"]+", npc="+conanim["selectedNPC"]+"}]")
+				result.append("\t\t\treturn [StageScene."+conanim["selectedStage"]+", \""+conanim["selectedAnim"]+"\", {pc="+conanim["selectedPC"]+", npc="+conanim["selectedNPC"]+"}]")
 			
-			result.append("\t\treturn [StageScene."+anim["selectedStage"]+", \""+anim["selecedAnim"]+"\", {pc="+anim["selectedPC"]+", npc="+anim["selectedNPC"]+"}]")
+			result.append("\t\treturn [StageScene."+anim["selectedStage"]+", \""+anim["selectedAnim"]+"\", {pc="+anim["selectedPC"]+", npc="+anim["selectedNPC"]+"}]")
 			
 	
 	exportedCodeDialog.show_modal()
@@ -1126,7 +1126,7 @@ func _on_AddAnimWithConditionButton_pressed():
 		"condition": "false",
 		"animData": {
 			selectedStage = StageScene.SexAllFours,
-			selecedAnim = "tease",
+			selectedAnim = "tease",
 			selectedPC = "domID",
 			selectedNPC = "subID",
 		}
@@ -1148,3 +1148,34 @@ func onUpAnimWithCondition(index):
 	
 	Util.moveValueUp(currentState["animsWithCondition"], index)
 	updateRightPanel()
+
+# Snake_case wrappers for key methods
+func register_arg_scene(path):
+	registerArgScene(path)
+
+func create_arg_scene(id):
+	return createArgScene(id)
+
+func register_action(path):
+	registerAction(path)
+
+func create_action(id):
+	return createAction(id)
+
+func update_left_panel():
+	updateLeftPanel()
+
+func update_right_panel():
+	updateRightPanel()
+
+func get_current_state():
+	return getCurrentState()
+
+func get_action_properties():
+	return getActionProperties()
+
+func get_state_properties():
+	return getStateProperties()
+
+func hide_all_screens():
+	hideAllScreens()

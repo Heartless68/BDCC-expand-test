@@ -5,3 +5,10 @@ func isCondition():
 
 func isAction():
 	return false
+
+# Snake_case wrappers
+func is_condition():
+	return isCondition()
+
+func is_action():
+	return isAction()
