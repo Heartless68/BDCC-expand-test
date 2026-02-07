@@ -32,11 +32,21 @@ var reputation:Reputation
 var tfHolder:TFHolder
 
 var dynamicPersonality: bool = false
-
+# Aliases for backwards-compatible snake_case calls
+var skills_holder: SkillsHolder
+var buffs_holder: BuffsHolder
 func _init():
 	initialDodgeChance = 0.05 # Player has a small chance to dodge anything
 
 func _ready():
+	# Initialize aliases to camelCase holders (if they exist from parent)
+	if(!has_meta("initialized_player_aliases")):
+		if(buffsHolder != null):
+			buffs_holder = buffsHolder
+		if(skillsHolder != null):
+			skills_holder = skillsHolder
+		set_meta("initialized_player_aliases", true)
+	
 	#GM.pc = self
 	name = "Player"
 	menstrualCycle = MenstrualCycle.new()
