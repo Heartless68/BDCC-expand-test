@@ -2,7 +2,7 @@ extends Control
 
 var data = {
 	selectedStage = StageScene.SexAllFours,
-	selecedAnim = "tease",
+	selectedAnim = "tease",
 	selectedPC = "domID",
 	selectedNPC = "subID",
 }
@@ -52,12 +52,12 @@ func setData(theData):
 	if(true):
 		var index = 0
 		for item in allAnims:
-			if(item == data["selecedAnim"]):
+			if(item == data["selectedAnim"]):
 				$HBoxContainer/OptionButton2.selected = index
 				break
 			index += 1
 		if($HBoxContainer/OptionButton2.selected >= 0):
-			data["selecedAnim"] = allAnims[$HBoxContainer/OptionButton2.selected]
+			data["selectedAnim"] = allAnims[$HBoxContainer/OptionButton2.selected]
 
 
 func _on_OptionButton_item_selected(index):
@@ -65,7 +65,7 @@ func _on_OptionButton_item_selected(index):
 	setData(data)
 
 func _on_OptionButton2_item_selected(index):
-	data["selecedAnim"] = GlobalRegistry.getStageScenesCachedStates()[data["selectedStage"]][index]
+	data["selectedAnim"] = GlobalRegistry.getStageScenesCachedStates()[data["selectedStage"]][index]
 	setData(data)
 
 func _on_OptionButton3_item_selected(index):

@@ -3816,3 +3816,68 @@ func calculatePowerScore(ignoreCurrentState:bool = false) -> float:
 		finalScore *= (1.0 - getStaminaLevel()*0.5)
 	
 	return finalScore
+
+
+# Snake_case wrappers for critical methods (conservative subset)
+func get_id():
+	return getID()
+
+func add_pain(_p: int):
+	addPain(_p)
+
+func add_lust(_l: int):
+	addLust(_l)
+
+func add_stamina(_s: int):
+	addStamina(_s)
+
+func get_pain() -> int:
+	return getPain()
+
+func get_lust() -> int:
+	return getLust()
+
+func get_stamina() -> int:
+	return getStamina()
+
+func get_max_stamina() -> int:
+	return getMaxStamina()
+
+func get_name() -> String:
+	return getName()
+
+func add_effect(effectID: String, args = []):
+	return addEffect(effectID, args)
+
+func has_effect(effectID: String):
+	return hasEffect(effectID)
+
+func get_effect(effectID: String):
+	return getEffect(effectID)
+
+func remove_effect(effectID: String):
+	removeEffect(effectID)
+
+func get_status_effects():
+	return getStatusEffects()
+
+func process_battle_turn():
+	processBattleTurn()
+
+func is_player():
+	return isPlayer()
+
+func get_attacks(_battlename):
+	return getAttacks(_battlename)
+
+func receive_damage(damageType, amount: int, armorScale: float = 1.0):
+	return receiveDamage(damageType, amount, armorScale)
+
+func is_dodging():
+	return isDodging()
+
+func is_blocking():
+	return isBlocking()
+
+func is_defocusing():
+	return isDefocusing()

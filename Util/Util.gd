@@ -829,3 +829,28 @@ static func tryFixColor(_colorVal, allowNull:bool = true):
 		return Color(rVal, gVal, bVal)
 	else:
 		return Color(_colorVal)
+
+# Snake_case wrappers for key methods
+static func unique_elements(arr: Array):
+	return uniqueElements(arr)
+
+static func human_readable_list(arr: Array, andConnector: String = "and", commaConnector: String = ","):
+	return humanReadableList(arr, andConnector, commaConnector)
+
+static func get_files_in_folder(folder):
+	return getFilesInFolder(folder)
+
+static func get_time_string_human_readable(t):
+	return getTimeStringHumanReadable(t)
+
+static func get_species_name(species: Array):
+	return getSpeciesName(species)
+
+static func capitalize_first_letter(string:String):
+	return capitalizeFirstLetter(string)
+
+static func read_file(path):
+	return readFile(path)
+
+static func write_file(path, content):
+	return writeFile(path, content)

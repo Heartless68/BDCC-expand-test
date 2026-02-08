@@ -18,3 +18,16 @@ static func print(text: String):
 
 static func printVerbose(text: String):
 	print(text)
+
+# CamelCase wrappers for consistency
+static func printErr(text: String):
+	printerr(text)
+
+static func printWarn(text: String):
+	warning(text)
+
+static func printWarning(text: String):
+	warning(text)
+
+static func verbose(text: String):
+	printVerbose(text)
